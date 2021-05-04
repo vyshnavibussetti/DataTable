@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Table</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="src/css/datatable.css" />
+    <script type="text/javascript" src="./src/js/datatable.js"></script>
+  </head>
+  <body>
+    <h3>Countries Table</h3>
+    <!-- table for showing data -->
+    <div id="loadingDiv">
+      Loading table...
+    </div>
+    <div id="tableDiv" style="display: none;">
+      <div class="filterDiv">
+        <div id="pageSizeFilterDiv" class="pageSizeFilterDiv">
+          <select name="pagesDropDown" id="pagesDropDown" class="pagesDropDown">
+          </select>
+        </div>
+        <div id="searchFilterDiv">
+          <input type="search" id="searchBox" />
+        </div>
+      </div>
+      <table id="data-table"></table>
+
+      <div id="entries"></div>
+      <div id="pagination"></div>
+    </div>
+  </body>
+</html>
